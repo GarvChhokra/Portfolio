@@ -1,0 +1,173 @@
+    /* style.css, Garv Chhokra, 301183937, 23 September */
+    
+    .logoImg {
+        width: 50px;
+        border-radius: 10px;
+    }
+    
+    .companyLogo {
+        text-align: center;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .logoHead {
+        text-align: center;
+        color: black;
+        width: 240px;
+        height: 200px;
+        font-size: 36px;
+        line-height: 43px;
+        vertical-align: top;
+    }
+    
+    .navbar {
+        text-align: center;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        display: inline-block;
+        text-align: center;
+        padding-left: 10px;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #111;
+    }
+    
+    .mainBody {
+        padding: 30px;
+        margin-top: 85px;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .footerTxt {
+        text-align: center;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .missionStatementHead {
+        padding: 10px;
+    }
+    
+    .missionStatement {
+        text-align: center;
+        margin-top: -16px;
+        padding: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+        background-color: bisque;
+        border-radius: 20px;
+        width: 1000px;
+        height: 140px;
+        font-size: 18px;
+        font-family: Helvetica;
+        overflow: hidden;
+        padding-bottom: 60px;
+    }
+    
+    .imgGarv {
+        width: 200px;
+        float: right;
+    }
+    
+    .aboutGarv {
+        padding: 10px;
+        font-family: sans-serif;
+    }
+    
+    .projectImage {
+        width: 300px;
+    }
+    
+    .card {
+        padding: 20px;
+        border-radius: 10px;
+        border-style: outset;
+        float: left;
+        margin-left: 70px;
+    }
+    
+    .servicesImg {
+        width: 1000px;
+        height: 500px;
+    }
+    
+    marquee {
+        background-image: url("images/our-services.png");
+        background-repeat: no-repeat;
+    }
+    
+    .serviceText {
+        text-align: center;
+        background-color: bisque;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    
+    form {
+        margin: 0 auto;
+        border: 3px solid slategray;
+        border-radius: 20px;
+        width: 450px;
+        text-align: center;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        background-color: bisque;
+    }
+    
+    label,
+    input {
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    label {
+        margin-top: 20px;
+    }
