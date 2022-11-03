@@ -14,14 +14,14 @@ let User = userModel.User; // alias
 
 module.exports.displayHomePage = (req, res, next) => {
     res.render("home", {
-        title: "Home",
+        title: "Hello!! I'm Garv Chhokra",
         displayName: req.user ? req.user.displayName : "",
     });
 };
 
 module.exports.displayAboutPage = (req, res, next) => {
     res.render("aboutme", {
-        title: "About",
+        title: "About Me",
         displayName: req.user ? req.user.displayName : "",
     });
 };
@@ -33,9 +33,9 @@ module.exports.displayProductsPage = (req, res, next) => {
     });
 };
 
-module.exports.displayServicesPage = (req, res, next) => {
-    res.render("services", {
-        title: "Services",
+module.exports.displaySkillsPage = (req, res, next) => {
+    res.render("skills", {
+        title: "My Skills",
         displayName: req.user ? req.user.displayName : "",
     });
 };
@@ -114,13 +114,13 @@ module.exports.processLoginPage = (req, res, next) => {
             });
 
             /* TODO - Getting Ready to convert to API
-                                                                                        res.json({success: true, msg: 'User Logged in Successfully!', user: {
-                                                                                            id: user._id,
-                                                                                            displayName: user.displayName,
-                                                                                            username: user.username,
-                                                                                            email: user.email
-                                                                                        }, token: authToken});
-                                                                                        */
+                                                                                                                            res.json({success: true, msg: 'User Logged in Successfully!', user: {
+                                                                                                                                id: user._id,
+                                                                                                                                displayName: user.displayName,
+                                                                                                                                username: user.username,
+                                                                                                                                email: user.email
+                                                                                                                            }, token: authToken});
+                                                                                                                            */
             // displayName: req.user ? req.user.displayName : ''
             Contact.find((err, contactList) => {
                 if (err) {
@@ -192,8 +192,8 @@ module.exports.processRegisterPage = (req, res, next) => {
             // redirect the user and authenticate them
 
             /* TODO - Getting Ready to convert to API
-                                                                                    res.json({success: true, msg: 'User Registered Successfully!'});
-                                                                                    */
+                                                                                                                        res.json({success: true, msg: 'User Registered Successfully!'});
+                                                                                                                        */
 
             return passport.authenticate("local")(req, res, () => {
                 res.redirect("/busContact");

@@ -3,7 +3,7 @@
     <main class="container">
         <div class="row">
             <div class="col-md-offset-3 col md-8">
-                <a href="busContact/add" class="btn mb-3 btn-primary" role="button">Add Contact</a>
+                <a href="busContact/add" class="btn mb-3 btn-primary addContact" role="button">Add Contact</a>
                 <br />
                 <table class="table table-bordered table-striped table-hover">
                     <tr>
@@ -11,8 +11,8 @@
                         <th class="text-content text-center col-4">Phone Number</th>
                         <th class="text-content text-center col-4">Email</th>
                         <% if(typeof displayName == 'string' && displayName){%>
-                            <th class="text-content text-center col-1">Edit</th>
-                            <th class="text-content text-center col-1">Delete</th>
+                            <th class="text-content text-center col-1"></th>
+                            <th class="text-content text-center col-1"></th>
                             <%}%>
                     </tr>
 
@@ -28,8 +28,8 @@
                                 <%=ContactList[count].email%>
                             </td>
                             <% if(typeof displayName == 'string' && displayName){%>
-                                <td class="text-center col-1"><a href="/busContact/edit/<%=ContactList[count]._id%>" class="btn btn-primary">Edit</a></td>
-                                <td class="text-center col-1"><a href="/busContact/delete/<%=ContactList[count]._id%>" class="btn btn-danger">Delete</a></td>
+                                <td class="text-center col-1 editBtn"><a href="/busContact/edit/<%=ContactList[count]._id%>" class="btn btn-primary">Edit</a></td>
+                                <td class="text-center col-1 deleteBtn"><a href="/busContact/delete/<%=ContactList[count]._id%>" class="btn btn-danger">Delete</a></td>
                                 <%}%>
                         </tr>
                         <%}%>

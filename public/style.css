@@ -1,5 +1,15 @@
     /* style.css, Garv Chhokra, 301183937, 23 September */
     
+    body {
+        background-image: url(./images/BG.jpeg);
+        color: white;
+    }
+    
+    h1 {
+        font-family: "Spartan";
+        color: white;
+    }
+    
     .logoImg {
         width: 50px;
         border-radius: 10px;
@@ -77,29 +87,128 @@
     .missionStatementHead {
         padding: 10px;
     }
+    /* Start  */
+    
+    .wrapper {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .link_wrapper {
+        position: relative;
+    }
+    
+    .aboutBtn a {
+        display: block;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        font-weight: bold;
+        text-decoration: none;
+        background: #333;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: 3px solid #333;
+        transition: all .35s;
+    }
+    
+    .icon {
+        width: 50px;
+        height: 50px;
+        border: 3px solid transparent;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transition: all .35s;
+    }
+    
+    .icon svg {
+        width: 30px;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 15px);
+        transform: rotate(-45deg);
+        fill: #2ecc71;
+        transition: all .35s;
+    }
+    
+    .aboutBtn a:hover {
+        width: 200px;
+        border: 3px solid #2ecc71;
+        background: transparent;
+        color: #2ecc71;
+    }
+    
+    .aboutBtn a:hover+.icon {
+        border: 3px solid #2ecc71;
+        right: -25%;
+    }
+    /* End */
+    
+    .aboutBtn a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(235, 83, 57, 0.8);
+        padding: 5px;
+        border-radius: 10px;
+    }
     
     .missionStatement {
+        padding: 10px;
+        font-family: "Spartan";
         text-align: center;
-        margin-top: -16px;
-        padding: 40px;
-        padding-left: 80px;
-        padding-right: 80px;
-        background-color: bisque;
-        border-radius: 20px;
-        width: 1000px;
-        height: 140px;
-        font-size: 18px;
-        font-family: Helvetica;
-        overflow: hidden;
-        padding-bottom: 60px;
+        color: white;
     }
     
     .imgGarv {
-        width: 200px;
-        float: right;
+        float: left;
+        position: absolute;
+        left: -2%;
+        width: 500px;
+    }
+    
+    .linkResume {
+        text-align: center;
+    }
+    
+    .linkResume a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: #2ecc71;
+        border-radius: 15px;
+    }
+    /* .aboutGarv {
+        font-family: Verdana, sans-serif;
+    } */
+    
+    .divAbout {
+        position: relative;
+        top: 3%;
+        left: 28%;
+        height: 200px;
+        width: 600px;
+        background-color: rgb(214, 172, 116);
+        border-radius: 20px;
+        padding: 10px;
+        line-height: 1.4em;
+        color: rgb(30, 53, 53);
+    }
+    
+    .linkResume a:hover {
+        color: tomato;
+        background-color: #2bcc6e7d;
+        text-transform: capitalize;
     }
     
     .aboutGarv {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
         padding: 10px;
         font-family: sans-serif;
     }
@@ -114,6 +223,8 @@
         border-style: outset;
         float: left;
         margin-left: 70px;
+        background-color: white;
+        color: black;
     }
     
     .servicesImg {
@@ -122,7 +233,7 @@
     }
     
     marquee {
-        background-image: url("images/our-services.png");
+        /* background-image: url("images/our-services.png"); */
         background-repeat: no-repeat;
     }
     
@@ -137,6 +248,7 @@
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 100%;
+        background-color: white;
     }
     
     td,
@@ -147,7 +259,20 @@
     }
     
     tr:nth-child(even) {
-        background-color: #dddddd;
+        background-color: #333;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: rgb(214, 172, 116);
+    }
+    
+    td a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    td a:hover {
+        color: #e46565;
     }
     
     form {
@@ -158,7 +283,39 @@
         text-align: center;
         margin-bottom: 25px;
         padding-bottom: 15px;
-        background-color: bisque;
+        background-color: rgb(214, 172, 116);
+    }
+    
+    .addContact {
+        text-decoration: none;
+        padding: 4px;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        color: #333;
+    }
+    
+    .editBtn a {
+        font-weight: bolder;
+        color: green;
+    }
+    
+    .editBtn a:hover {
+        color: black;
+    }
+    
+    .deleteBtn a:hover {
+        color: black;
+    }
+    
+    .deleteBtn a {
+        font-weight: bolder;
+        color: red;
+    }
+    
+    .addContact:hover {
+        padding: 6px;
+        border-radius: 15px;
+        font-weight: bolder;
     }
     
     label,
@@ -170,4 +327,86 @@
     
     label {
         margin-top: 20px;
+    }
+    
+    .line {
+        background-color: rgba(255, 255, 255, 0.708);
+        height: 20px;
+        border-radius: 20px;
+        /* width: 90%;
+        margin-left: auto;
+        margin-right: auto; */
+    }
+    
+    .line:hover {
+        padding: 1px;
+    }
+    
+    .progress {
+        background-color: rgb(159, 29, 29);
+        height: 20px;
+        width: 1100px;
+        border-radius: 20px;
+        text-align: center;
+        color: #333;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+    }
+    
+    .progress:hover {
+        color: black;
+        background-color: #e46565;
+    }
+    
+    .lineBA {
+        background-color: rgba(255, 255, 255, 0.708);
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .lineBA:hover {
+        padding: 1px;
+    }
+    
+    .progressBA {
+        background-color: yellowgreen;
+        height: 20px;
+        width: 1000px;
+        border-radius: 20px;
+        text-align: center;
+        color: #333;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+    }
+    
+    .progressBA:hover {
+        color: black;
+        background-color: #2ecc71;
+    }
+    
+    .lineD {
+        background-color: rgba(255, 255, 255, 0.708);
+        height: 20px;
+        border-radius: 20px;
+    }
+    
+    .lineD:hover {
+        padding: 1px;
+    }
+    
+    .progressD {
+        background-color: orange;
+        height: 20px;
+        width: 1111px;
+        border-radius: 20px;
+        text-align: center;
+        color: #333;
+        transition: width 2s, height 2s, background-color 2s, transform 2s;
+    }
+    
+    .progressD:hover {
+        color: black;
+        background-color: rgb(151, 116, 55);
+    }
+    
+    .skillTtle {
+        padding: 10px;
     }
